@@ -5,6 +5,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/recipes" do
+<<<<<<< HEAD
     @recipes = Recipe.all
     erb :index
   end
@@ -21,4 +22,9 @@ class ApplicationController < Sinatra::Base
     erb :edit
   end
 
+=======
+    @recipes = Recipes.all
+    erb :index
+  end
+>>>>>>> 8d9da2a33b0774b584e9bd775cc45204d645266b
 end
